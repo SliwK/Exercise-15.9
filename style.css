@@ -1,0 +1,37 @@
+body {
+  background-color: #f7f1e3;
+  font-family: 'Rammetto One', cursive;
+  margin: 0 auto;
+  width: 600px;
+}
+
+#root {
+  background-color: #d1ccc0;
+  padding: 30px;
+}
+
+form {
+  padding: 20px;
+  text-align: center;
+}
+
+#singleUser {
+  position: relative;
+}
+
+#image {
+  border-radius: 50%;
+}
+
+#userLink {
+  color: black;
+  align-items: center;
+  float: right;
+  position: relative;
+  top: 50px;
+  text-decoration: none;
+}
+
+#userLink:hover {
+  color: #84817a;
+}

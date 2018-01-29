@@ -1,7 +1,3 @@
-ReactDOM.render(
-  <App />,
-  document.getElementById("root")
-);
 
 class App extends React.Component {
   constructor() {
@@ -26,7 +22,7 @@ render() {
     return (
       <div>
         <form onSubmit={event => this.onSubmit(event)}>
-          <label htmlFor="searchText">Search by user name</label>
+          <label htmlFor="searchText">Search by user name:   </label>
           <input
             type="text"
             id="searchText"
@@ -56,10 +52,16 @@ render() {
 class User extends React.Component {
   render() {
     return (
-      <div>
-        <img src={this.props.user.avatar_url} style={{maxWidth: '100px'}}/>
-        <a href={this.props.user.html_url} target="_blank">{this.props.user.login}</a>
+      <div id={"singleUser"}>
+        <img src={this.props.user.avatar_url} id={"image"} style={{maxWidth: '100px'}}/>
+        <a href={this.props.user.html_url} id={"userLink"} target="_blank">{this.props.user.login}</a>
       </div>
     );
   }
 }
+
+
+ReactDOM.render(
+  <App />,
+  document.getElementById("root")
+);
